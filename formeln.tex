@@ -1,0 +1,85 @@
+\chapter{Formelsammlung Umwelttechnik}
+
+%Emission als Massenanteil
+\begin{flalign}
+\text{\textbf{Emission (Def.)} } \text{ \textbf{:}} && \hspace*{-1em}  =\frac{\text{Schadstoff}}{\text{Produkt}} \left[\frac{\si{\kg}}{\si{t}}\right]  &&
+\end{flalign}
+
+\begin{flalign}
+\text{\textbf{Imission (Konzentration)} } \text{ \textbf{:}} && \hspace*{-1em}  =\left[\frac{\si{\kg}}{\si{\raiseto{3}\meter}}\right]  &&
+\end{flalign}
+
+\begin{flalign}
+\text{\textbf{Imission (Staubniederschlag)} } \text{ \textbf{:}} && \hspace*{-1em}  =\left[\frac{\si{\gram}}{\si{\raiseto{2}\meter*d}}\right] &&
+\end{flalign}
+
+\textbf{Ideales Gasgesetz:}
+\begin{flalign}
+& p*\dot{V}=\dot{n}*R_0*T\\
+& p*\dot{V}=\dot{m}*R_{spez.}*T\\
+& p_i*\dot{V}=\frac{\dot{m_i}}{M_i}*R_0*T
+\end{flalign}
+
+\textbf{AGW Volumenanteil $\boldsymbol{\varphi_i}$:}
+\begin{flalign}
+& = \frac{\left[\text{ppm}\right]*10^{-3}*M_i\left[\si{\gram \per \mole}\right]*1,013*10^5}{8,314*293}\left[\si{\milli \gram \per \raiseto{3} \meter}\right]\\
+&= \frac{\left[\text{ppm}\right]*M_i\left[\si{\gram \per \mole}\right]}{24,047}\left[\si{\milli \gram \per \raiseto{3} \meter}\right] \text{\small{Normbedingungen}}\\
+&= \frac{\left[\text{ppm}\right]*M_i\left[\si{\gram \per \mole}\right]}{22,4}\left[\si{\milli \gram \per \raiseto{3} \meter}\right] \text{\small{Standardbedingungen}}
+\end{flalign}
+
+\textbf{AGW Synergieeffekt:}
+\begin{flalign}
+	&= \sum_{i=1}^{n}\frac{c_i}{\text{AGW}_i} \leq 1
+\end{flalign}
+
+\textbf{AGW Arbeitstag:}
+\begin{flalign}
+& \frac{c_{\text{Zul}}}{\text{AGW}}=\frac{8h}{t_{\text{Schicht,real}}}\\
+& c_{\text{Zul}}*t_{\text{Schicht,real}}=8h*\text{{AGW}}
+\end{flalign}\\
+
+\textbf{Luftwechselzahl $\boldsymbol{l}$:}
+\begin{flalign}
+& = \frac{V_E \text{\tiny{(ausgewechselt)}}}{V_R \text{\tiny{(Raumvolumen)}}}
+\end{flalign}
+
+\textbf{Verdünnungsbelüftung (instationär) $\boldsymbol{c_i(t)}$:}
+\begin{flalign}
+&= \left(c_{i_{zu}}+\frac{\dot{m}_{i,e}}{l*V_R}\right)*\left[1-e^{-l*t}\right]+c_i(t=0)*e^{-l*t}
+\end{flalign}
+\begin{itemize}
+	\item $c_{i,max}=\frac{\dot{m}_{i,e}}{l*V_R}+c_{i,zu}$
+	\item Schadstoffkonzentration am Anfang null $c_i(t=0)=0$ 
+	\item zugeführte Luft $c_{i,zu}=0$ 
+\end{itemize}
+\textbf{Verdünnungsbelüftung (stationär) $\boldsymbol{c_i}$:}
+\begin{flalign}
+&= c_{i_{zu}}+\frac{\dot{m}_{i,e}}{l*V_R}\leq \text{AGW}_i
+\end{flalign}
+\\
+\textbf{Masse Partikel $\boldsymbol{m_p}$:}
+\begin{flalign}
+&=\rho_p*\frac{\pi}{6}*\text{x}^3
+\end{flalign}
+\\
+\textbf{Widerstand $\boldsymbol{c_W}$:}
+\begin{flalign}
+&=\frac{24}{\text{Re}}
+\end{flalign}
+\\
+\textbf{?? Stokes'sches Gesetz (Widerstandskraft) $\boldsymbol{\overrightarrow{F_W}}$:}
+\begin{flalign}
+&\overrightarrow{F_W}=\frac{3*\pi*\eta_F*\text{x}*\omega_S}{c_V}\\
+&w_S= \frac{(\varphi_P-\varphi_F)*\text{x}^2*Cu*g}{18*\eta_F}
+\end{flalign}
+\\
+\textbf{Abscheidegrad $\boldsymbol{\eta}$:}
+\begin{flalign}
+&=\frac{\dot{m}_{ab}}{\dot{m}_0}=\frac{\dot{m_0}-\dot{m}_{\tiny{Rein}}}{\dot{m_0}}\\
+\end{flalign}
+\\
+\textbf{Trenngrad $\boldsymbol{T_i(x_i)}$:}
+\begin{flalign}
+&=\frac{\dot{m}_{i,0}-\dot{m}_{i,\tiny{Rein}}}{\dot{m_{i,0}}}
+\end{flalign}
+
