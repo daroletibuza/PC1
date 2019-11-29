@@ -11,15 +11,36 @@
 \contentsline {subsubsection}{\nonumberline Temperaturabhängigkeit der inneren Energie $\mathbf {U}$}{7}{section*.3}% 
 \contentsline {subsubsection}{\nonumberline Wärmekapazität $\mathbf {c_V}$ bei konstantem Volumen}{8}{section*.5}% 
 \contentsline {subsubsection}{\nonumberline Volumenabhängigkeit der inneren Energie $\mathbf {U}$}{8}{section*.6}% 
-\contentsline {subsection}{\numberline {2.3.4}Modellsystem "`Ideales Gas"' und Verhalten realer Gase}{9}{subsection.2.3.4}% 
-\contentsline {subsubsection}{\nonumberline Annahmen zum idealen Gas}{9}{section*.8}% 
-\contentsline {subsubsection}{\nonumberline Verhalten realer Gase}{9}{section*.9}% 
-\contentsline {subsection}{\numberline {2.3.5}Zustandsgleichung und Gasgesetze}{10}{subsection.2.3.5}% 
-\contentsline {subsubsection}{\nonumberline Charakterisierung der Gasphase am Beispiel von Wasser-Dampf-Gemischen}{10}{section*.11}% 
-\contentsline {subsubsection}{\nonumberline Analoge Betrachtung für ander thermodynamische Größen}{11}{section*.12}% 
-\contentsline {subsection}{\numberline {2.3.6}Kinetische Gastheorie}{11}{subsection.2.3.6}% 
-\contentsline {subsubsection}{\nonumberline Impuls und Impulsänderung}{11}{section*.13}% 
-\contentsline {subsubsection}{\nonumberline Boltzmann Verteilung}{13}{section*.14}% 
-\contentsline {subsubsection}{\nonumberline Mittlere quadratische Geschwindigkeit $\mathbf {\bar {v}}$}{13}{section*.15}% 
-\contentsline {subsubsection}{\nonumberline Mittlere Geschwindigkeit $\mathbf {c}$}{13}{section*.16}% 
-\contentsline {chapter}{\numberline {3}Formelsammlung Umwelttechnik}{14}{chapter.3}% 
+\contentsline {section}{\numberline {2.4}Modellsystem "`Ideales Gas"' und Verhalten realer Gase}{9}{section.2.4}% 
+\contentsline {subsection}{\numberline {2.4.1}Annahmen zum idealen Gas}{9}{subsection.2.4.1}% 
+\contentsline {subsection}{\numberline {2.4.2}Verhalten realer Gase}{9}{subsection.2.4.2}% 
+\contentsline {subsection}{\numberline {2.4.3}Zustandsgleichung und Gasgesetze}{10}{subsection.2.4.3}% 
+\contentsline {subsubsection}{\nonumberline Charakterisierung der Gasphase am Beispiel von Wasser-Dampf-Gemischen}{10}{section*.9}% 
+\contentsline {subsubsection}{\nonumberline Analoge Betrachtung für ander thermodynamische Größen}{11}{section*.10}% 
+\contentsline {subsection}{\numberline {2.4.4}Kinetische Gastheorie}{11}{subsection.2.4.4}% 
+\contentsline {subsubsection}{\nonumberline Impuls und Impulsänderung}{11}{section*.11}% 
+\contentsline {subsubsection}{\nonumberline Boltzmann Verteilung}{13}{section*.12}% 
+\contentsline {subsubsection}{\nonumberline Mittlere quadratische Geschwindigkeit $\mathbf {\bar {v}}$}{13}{section*.13}% 
+\contentsline {subsubsection}{\nonumberline Mittlere Geschwindigkeit $\mathbf {c}$}{13}{section*.14}% 
+\contentsline {section}{\numberline {2.5}Kenngrößen zur Beschreibung realer Gassysteme}{13}{section.2.5}% 
+\contentsline {subsubsection}{\nonumberline Kompressibilitätsfaktor $\boldsymbol {Z}$}{13}{section*.15}% 
+\contentsline {subsubsection}{\nonumberline \textsc {Boyle} Temperatur}{14}{section*.16}% 
+\contentsline {subsection}{\numberline {2.5.1}Die Virialgleichung}{14}{subsection.2.5.1}% 
+\contentsline {subsection}{\numberline {2.5.2}Die \textsc {Van-der-Waals}-Gleichung}{15}{subsection.2.5.2}% 
+\contentsline {subsubsection}{\nonumberline Der \textsc {Van-der-Waals}-Koeffizient $\boldsymbol {a \left [\si {\pascal \raiseto {6} \meter \per \raiseto {2} \mol }\right ]}$ - Kohäsionsdruck}{15}{section*.17}% 
+\contentsline {subsubsection}{\nonumberline Der Van-der-Waals-Koeffizient $\boldsymbol {b}\left [\si {\raiseto {3}\centi \meter \per \mole }\right ]$ - Kovolumen}{15}{section*.18}% 
+\contentsline {subsubsection}{\nonumberline Anwendung:}{16}{section*.19}% 
+\contentsline {subsubsection}{\nonumberline Zusammenhang der \textsc {Van-der-Waals}-Gleichung mit den kritischen Größen}{16}{section*.20}% 
+\contentsline {subsubsection}{\nonumberline Bestimmung der kritischen Zustandsgrößen}{17}{section*.21}% 
+\contentsline {subsubsection}{\nonumberline Reduzierte Zustandsgrößen \textsc {Van-der-Waals}-Gleichung}{17}{section*.22}% 
+\contentsline {subsubsection}{\nonumberline Grenzen und Gültigkeit der \textsc {Van-der-Waals}-Gleichung}{18}{section*.23}% 
+\contentsline {subsection}{\numberline {2.5.3}Die \textsc {Redlich-Kwong}-Gleichung}{18}{subsection.2.5.3}% 
+\contentsline {subsubsection}{\nonumberline Allgemeine Infos zur \textsc {Redlich-Kwong}-Gleichung:}{18}{section*.24}% 
+\contentsline {subsubsection}{\nonumberline Extensive Form der \textsc {Redlich-Kwong}-Gleichung:}{18}{section*.25}% 
+\contentsline {subsubsection}{\nonumberline Intensive Form der \textsc {Redlich-Kwong}-Gleichung:}{19}{section*.26}% 
+\contentsline {subsection}{\numberline {2.5.4}Die \textsc {Peng-Robinson}-Gleichung}{19}{subsection.2.5.4}% 
+\contentsline {subsubsection}{\nonumberline Allgemeine Infos zur \textsc {Peng-Robinson}-Gleichung:}{19}{section*.27}% 
+\contentsline {section}{\numberline {2.6}Die Enthalpie $\boldsymbol {H}$}{19}{section.2.6}% 
+\contentsline {subsection}{\numberline {2.6.1}Die Enthalpie in techn. Prozesse}{19}{subsection.2.6.1}% 
+\contentsline {subsection}{\numberline {2.6.2}Die Enthalpie in der Chemie}{20}{subsection.2.6.2}% 
+\contentsline {subsection}{\numberline {2.6.3}Die Enthalpie $\boldsymbol {H}$ eines Systems}{21}{subsection.2.6.3}% 

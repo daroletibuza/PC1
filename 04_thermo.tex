@@ -198,8 +198,8 @@ Der Binnendruck $\pi$ ist eine Maß für die Änderung der inneren Energie eines
 
 \newpage
 
-\subsection{Modellsystem "`Ideales Gas"' und Verhalten realer Gase}
-\subsubsection{Annahmen zum idealen Gas}
+\section{Modellsystem "`Ideales Gas"' und Verhalten realer Gase}
+\subsection{Annahmen zum idealen Gas}
 \begin{itemize}
 	\item Energie nur in Form kinetischer Energie\\
 	$\rightarrow$ potentielle Energie wird aufgrund WW mit Atomen/Molekülen vernachlässigt
@@ -214,7 +214,7 @@ Der Binnendruck $\pi$ ist eine Maß für die Änderung der inneren Energie eines
 \end{itemize}
 
 
-\subsubsection{Verhalten realer Gase}
+\subsection{Verhalten realer Gase}
 
 \begin{itemize}
 	\item WW der Teilchen
@@ -256,7 +256,7 @@ Die Zustandsgrößen $p$ und $V$ zeigen in der/ihrer Berechnung Abweichungen, we
 			\hline
 			&\\
 			Reihenentwicklung & Korrekturtherme\\
-			"`Virialgleichungen"'& Van-der-Waals GL, Berthelot GL, Redlich-K.-Wong GL, Peng-Robinson GL
+			"`Virialgleichungen"'& Van-der-Waals GL, Berthelot GL, Redlich-Kwong GL, Peng-Robinson GL
 		\end{tabulary} 
 	\end{table}
 	\FloatBarrier
@@ -391,3 +391,271 @@ ABBILDUNG\\
 	c		&= 4*\pi*\left(\frac{M}{2*\pi*T*R}\right)^{\frac{2}{3}}*\frac{1}{2}*\left(\frac{2*R*T}{M}\right)^2\\
 	c		&= \underline{\underline{\left(\frac{8*R*T}{\pi*M}\right)^{\frac{1}{2}}}}
 \end{flalign}
+
+
+\section{Kenngrößen zur Beschreibung realer Gassysteme}
+\subsubsection{Kompressibilitätsfaktor $\boldsymbol{Z}$}
+\begin{flalign}
+	Z	&= \frac{V_{\text{Real}}}{V_{\text{Ideal}}}=\frac{V_{\text{m}}}{V_{\text{m, Ideal}}}=\frac{p*V_{\text{Real}}}{n*R*T}
+\end{flalign}
+\begin{itemize}
+	\item Einführung eines Idealitätsfaktors (Abhängig von Druck und Temperatur)
+	\item $Z=1$: ideales Gas bzw. Verhalten von idealen Gasen
+	\item $Z>1$: Abstoßungskräfte, Gas schwerer als ideales Gas komprimierbar
+	\item $Z<1$: Anziehungskräfte, Gas leichter als ideales Gas komprimierbar
+\end{itemize}
+
+ABBILDUNG
+
+\subsubsection{\textsc{Boyle} Temperatur}
+= Temperatur bei der die Eigenschaften des realen Gases mit den eines idealen Gases für $p \rightarrow 0$ übereinstimmen
+\begin{itemize}
+	\item $T>T_B$: Isothermen haben nur ansteigenden Charakter
+	\item $T<T_B$: Isothermen zeigen ein Minimum auf
+\end{itemize}
+$\rightarrow$ anziehende WW-Kräfte zeigen bei tiefen Temperaturen einen stärkeren Effekt\\
+$\rightarrow$ eine unbegrenzte Annäherung ist aber nicht möglich, für hohe Drücke dominieren Abstoßungskräfte\\ \\
+\underline{Bsp.:} \hspace{7mm} $T_B(\ce{CO2})=500\si{\celsius}$
+
+\subsection{Die Virialgleichung}
+\underline{Ansatz:}\\
+Erweiterung der Gleichung des idealen Gases durch die Einführung von zusätzlichen Gliedern\\
+$\rightarrow$ Reihenentwicklung nach $p$ oder $V_m$
+\begin{itemize}
+	\item für techn. Anwendung Abbruch der Reihenentwicklung nach dem 2. oder 3. Glied
+	\item kann nur dampfförmige Zustände beschreiben
+	\item nutzbar bis $\approx \frac{1}{3}$ der kritischen Dichte (vom Druck $p$)
+	\item Virialkoeffizienten $B,D,...$ sind abhängig von der Temperatur und der Zusammensetzung (Konzentrationen) des Stoffsystems
+\end{itemize}
+\begin{flalign}
+	p*V_m &= R*T\\
+	p*V_m &= R*T+B(T)*p+C(T)*p^2+D(T)*p^3+...\\
+	p*V_m &= R*T*\left(1+\frac{B'}{V_m}+\frac{C'}{V_m}+...\right)
+\end{flalign}
+\newpage
+\subsection{Die \textsc{Van-der-Waals}-Gleichung}
+\textit{Einführung zusätzlicher Terme in das ideale Gasgesetz} \\
+
+ABBILDUNG\\
+
+$\rightarrow$ \textsc{Van-der-Waals}-Koeffizienten $a$ und $b$\\
+= Parameter stoffspezifisch und für übliche Stoffsysteme tabelliert
+
+\subsubsection{Der \textsc{Van-der-Waals}-Koeffizient $\boldsymbol{a \left[\si{\pascal \raiseto{6} \meter \per \raiseto{2} \mol}\right]}$ - Kohäsionsdruck}
+Über diesen Term werde die WW zwischen den Teilchen erfasst:
+\begin{flalign}
+	p_{\text{{\tiny ideal}}} &= p_{\text{{\tiny real}}} + p_{\text{{\tiny Kohäsion}}}
+\end{flalign}
+\textit{Ansatz}:
+\begin{flalign}
+	p_{\text{{\tiny Kohäsion}}} &= \frac{a}{(V_m)^2}
+\end{flalign}
+\textit{Hintergrund}:\\
+Druck $p$ = Stoßhäufigkeit und Kraft der Stöße
+\begin{flalign}
+	p &\sim \frac{n}{V}\\
+	V_m &\sim \frac{V}{n}
+\end{flalign}
+Aus dem \textsc{Coulomb}'schen Gesetz folgt, dass die WW = Stärke in quadratischer Abhängigkeit zum Abstand steht
+
+\subsubsection{Der Van-der-Waals-Koeffizient $\boldsymbol{b}\left[\si{\raiseto{3}\centi\meter\per \mole}\right]$ - Kovolumen}
+\begin{flalign}
+	V_{\text{m, ideal}} &= V_m-V_{\text{m, korr}}
+\end{flalign}
+
+\textit{Ansatz:}
+\begin{flalign}
+	V_{\text{m, korr}} &= n*b
+\end{flalign}
+
+\textit{Hintergrund:}
+\begin{flalign}
+V_{\text{m, korr}} &= n*b
+\end{flalign}
+\begin{itemize}
+	\item Moleküle bzw. Gasteilchen können sich nicht im gesamten Volumen bewegen, sondern nur im Volumen \\
+	$\Rightarrow V-n*b$
+	\item der kleinstmögliche Abstand zwischen zwei Kugeln beträgt \\
+	$\Rightarrow$ $2*r$ (r-Radius)\\ \\
+	\newpage
+	$\rightarrow$ daraus folgt für eine Bewegung zwischen 2 Kugeln ein Volumen von $8*V_{\text{Molekül}}$ nicht zugänglich ist (3D: $2^3=8$)
+	\begin{itemize}
+		\item 4x $V_{\text{Molekül}}$ ist nicht zugänglich
+		\item bzw. $b\sim 4*V_{\text{Molekül}}*N_A$
+	\end{itemize}
+	$\rightarrow$ über diesen Term wird das Eigenvolumen der Teilchen berücksichtigt
+	\item Für bzw. mit beiden Termen zusammen erweitert bzw. modifiziert sich die allgemeine Gasgleichung zu:
+	\begin{flalign}
+		p 	&= \frac{n*R*T}{V-n*b}-a*\frac{n^2}{V^2} \\
+			&= \frac{R*T}{V_m-b}-\frac{a}{V^2_m}
+	\end{flalign}
+\end{itemize}
+
+\subsubsection{Anwendung:}
+Die \textsc{Van-der-Waals}-Gleichung beschreibt das Verhalten realer Gase einschließlich ihres kritischen Verhaltens und im 2-Phasen-Gebiet (flüssig/gasförmig)\\ \\
+
+ABBILDUNG\\ \\
+
+\subsubsection{Zusammenhang der \textsc{Van-der-Waals}-Gleichung mit den kritischen Größen}
+\begin{itemize}
+	\item Für Temperaturen $T>T_{Kr}$ zeigen die Isothermen einen stetigen Anstieg zu höheren Drücken und kleinen Volumina
+	\item Für Temperaturen  $T<T_{Kr}$ zeigen die Isothermen jeweils ein Minimum und ein Maxima
+	\item Für Temperaturen $T\rightarrow T_{Kr}$ nähern sich die Extrema Minimum und Maximum soweit zueinander an, dass sie in Form eines Wendepunkts zusammenfallen. Am kritischen Punkt hat die Isotherme damit einen Anstieg von 0
+\end{itemize}
+
+\newpage
+
+\subsubsection{Bestimmung der kritischen Zustandsgrößen}
+\begin{flalign}
+	p								&= \frac{R*T}{V_m-b}-\frac{a}{(V_m)^2}\\
+	\frac{\diff p}{\diff V_m}		&= -\frac{R*T}{(V_m-b)^2}+\frac{2*a}{(V_m)^3}\\
+	\frac{\diff^2 p}{\diff (V_m)^2}	&= +\frac{R*T}{(V_m-b)^3}+\frac{6*a}{(V_m)^4}
+\end{flalign}
+\begin{flalign}
+		V_{m_{krit}} 	&=3*b \\
+		T_{Kr}			&=\frac{8a}{27*R*b} \\
+		p_{krit} 		&=\frac{a}{27*b^2}\\[2mm]
+		Z_{krit}		&=\frac{V_{real}}{V_{ideal}} = \frac{p_{krit}*V_{m_{krit} }}{R*T_{Krit}}
+\end{flalign}
+
+\subsubsection{Reduzierte Zustandsgrößen \textsc{Van-der-Waals}-Gleichung}
+$\rightarrow$ die kritischen Zustandsgrößen $p_{krit}, T_{krit}, V_{krit}$ sind für die einzelnen Gase charakteristischer bzw. stoffspezifisch, aber sie sind für alle Gase vorhanden bzw. existent \\
+Nutzung dieser fundamental für alle Gase vorhandenen und geltenden Größen, um darauf eine relative Vergleichsskala aufzubauen \\ \\
+\textit{\underline{Wie:}}\\
+Normierung der $p,T,V$-Werte auf die jeweilige kritische Größe unter Einführung sogenannter reduzierter Größen $p_R,V_R,T_R$
+\begin{flalign}
+	T_R		&= \frac{T}{T_{Krit}}\\
+	p_R		&= \frac{p}{p_{Krit}}\\
+	V_R		&= \frac{V}{V_{Krit}}\\[2mm]
+	V_{m_R}		&= \frac{V_m}{V_{m_{Krit}}}
+\end{flalign}
+
+\newpage
+
+\subsubsection{Grenzen und Gültigkeit der \textsc{Van-der-Waals}-Gleichung}
+\begin{itemize}
+	\item \textsc{Van-der-Waals}-Gleichung\\
+	= Beschreibung des Verlaufs und Zusammenhang der Zustandsgrößen $p,V,T$ der Gas- und Flüssigphase qualitativ richtig und hingehend genau\\ \\
+	$\rightarrow$ Für besonders exakte Analysen sowie im Bereich sehr hoher Drücke gibt es heute jedoch genauere Gleichungen (\textsc{Redlich-Kwong},...)
+	\item  Für hohe Temperaturen und große molare Volumen ist die \textsc{Van-der-Waals}-Gleichung gut anwendbar und geht im Grenzfall aufgrund:\\
+	\begin{flalign}
+		V_m >> b
+	\end{flalign}
+	und der Dominanz des ersten Gleichungssystems
+	\begin{flalign}
+	\frac{R*T}{V_m-b} >> \frac{a}{(V_m)^2}
+	\end{flalign}
+	in das ideale Gasgesetz über.
+	\begin{flalign}
+		p 		&= \frac{R*T}{V_m-\cancel{b}}-\cancel{\frac{a}{(V_m)^2}}\\
+		p*V_m	&= R*T\\
+		p*V		&= n*R*T
+	\end{flalign}
+\end{itemize}
+
+\subsection{Die \textsc{Redlich-Kwong}-Gleichung}
+\subsubsection{Allgemeine Infos zur \textsc{Redlich-Kwong}-Gleichung:}
+\begin{itemize}
+	\item empirische Erweiterung der  \textsc{Van-der-Waals}-Gleichung von  \textsc{Redlich} und \textsc{Kwong} im Jahr 1949
+	\item für:
+		\begin{itemize}
+			\item $T>T_{Krit} \rightarrow 1$ reelle Lösung der Gleichung 
+			\item $T<T_{Krit} \rightarrow 3$ reelle Lösungen der Gleichung 
+		\end{itemize}
+	$\rightarrow$ gleicher Schleifenförmiger Verlauf der Funktion\\
+	$\rightarrow$ Indikator für 2-Phasen-Gebiet
+	\item Auch aus der  \textsc{Redlich-Kwong}-Gleichung können die kritischen Größen berechnet bzw. umgekehrt die Parameter $a$ und $b$ aus diesen bestimmt werden
+\end{itemize}
+\subsubsection{Extensive Form der \textsc{Redlich-Kwong}-Gleichung:}
+\begin{flalign}
+	\left(p+\frac{a*n^2}{V*(V+n*b)*T^{0,5}}\right)*(V-n*b)&=n*R*T
+\end{flalign}
+\subsubsection{Intensive Form der \textsc{Redlich-Kwong}-Gleichung:}
+\begin{flalign}
+\left(p+\frac{a}{V_m*(V_m+b)*T^{0,5}}\right)*(V_m-b)&=R*T
+\end{flalign}
+\begin{flalign}
+b	&= (2^{\frac{1}{3}}-1)*V_{krit}\\
+a	&= \frac{1}{3*(2^{\frac{1}{3}}-1)}*R*T^{\frac{2}{3}}_{krit}*V_{krit}
+\end{flalign}
+
+\subsection{Die \textsc{Peng-Robinson}-Gleichung}
+\subsubsection{Allgemeine Infos zur \textsc{Peng-Robinson}-Gleichung:}
+\begin{itemize}
+	\item Erweiterung der \textsc{Redlich-Kwong}-Gleichung durch \textsc{Peng} und \textsc{Robinson} im Jahr 1976
+	\item Wiederum können auch aus der \textsc{Peng-Robinson}-Gleichung die kritischen Größen berechnet werden
+	\begin{flalign}
+		p	&= \frac{R*T}{V_m-b} - \frac{a(T)}{(V_m)^2+2b*V_m-b^2}\\[2mm]
+			&= \frac{R*T}{V_m-b} - \frac{a(T)}{(V_m)*(V_m+b)+b*(V_m-b)}
+	\end{flalign}
+	\begin{flalign}
+		b	&= 0,0778*\frac{R*T_{\text{{\tiny Krit}}}}{p_{\text{{\tiny Krit}}}}\\[2mm]
+		a	&= 0,457*\frac{R^2*T^2_{\text{{\tiny Krit}}}}{p_{\text{{\tiny Krit}}}}
+	\end{flalign}
+\end{itemize}
+
+\section{Die Enthalpie $\boldsymbol{H}$}
+\subsection{Die Enthalpie in techn. Prozesse}
+
+ABBILDUNG \\
+\begin{flalign}
+	  p_1 			&= p_2 = const.\\
+	  W_{mech_{12}}	&= W_{mech_{Rev_{12}}}+W_{mech_{diss_{12}}}\\
+	  W_{ges_{12}}	&= W_{vol_{12}}+W_{mech_{12}}\\
+	  \diff U 		&= \diff W + \diff Q
+\end{flalign}
+$\rightarrow$\textit{adiabatisches System,} $\diff Q=0$
+\begin{flalign}
+\diff U 	&= \diff W_{ges} = \diff W_{vol_{12}}+\diff W_{mech_{12}}
+\end{flalign}
+\begin{flalign}
+\diff W_{vol}	&= -p*\diff V
+\end{flalign}
+\textit{bei } $p=const.$ \textit{mit} $\Delta W_{vol}=-p*\Delta V$\\[1.mm]
+\textit{bei } $p=\frac{n*R*T}{V}$ \textit{mit} $\Delta W_{vol}=-\int_{V_1}^{V_2}\frac{n*R*T}{V}*\diff V=-n*R*T*\ln\left(\frac{V_2}{V_1}\right)$\\
+\newpage
+$\rightarrow$\textit{Isobares System, }$p=const.$
+\begin{flalign}
+	\Delta W_{ges}	&= \Delta W_{mech_{12}}+\left[(p*V_1)-(p*V_2)\right]\\
+					&= \Delta U \\
+					&= U_2-U_1
+\end{flalign}
+$\rightarrow$\textit{Umstellen nach }$\Delta W_{mech_{12}}$
+\begin{flalign}
+\Delta W_{mech_{12}}	&= (U_2+p*V_2)-(U_1+p*V_1)\\
+						& \hspace{1.5cm} H_2 \hspace{2cm} H_1
+\end{flalign}
+$\rightarrow$\textit{Einführung der neuen Zustandsgröße Enthalpie $H$}\\ \\
+Die Enthalpie $H$ berücksichtigt, die bei $p=const.$ zu leistende Volumenverschiebearbeit. Sie setzt sich aus der inneren Energie $U$ und der Verschiebearbeit $\Delta W_{mech_{12}}$ zusammen.
+\begin{flalign}
+	H	&= U+p*V
+\end{flalign}
+
+\subsection{Die Enthalpie in der Chemie}
+Der Wärmeaustausch hat bei phys.-chem. Prozessen und bei chem. Reaktionen oft die größte Bedeutung, z.B. therm. Aktivierung von chem. Reaktionen (\textsc{Arrhenius} Aktivierungsenergie), räumliche Umstrukturierung (cis-/trans-Isomerien) und die WW zwischen den Teilchen/Phasenübergänge (Schmelzen, Sieden, Mischungsbildung)\\
+$\rightarrow$\textit{Für isochore Prozesse }$\diff V =0$, \textit{gilt} $\diff U=\diff Q$ \textit{(selten der Fall)}\\
+$\rightarrow$ \textit{chem.-physk. Prozesse und chem. Reaktionen verlaufen jedoch oft \underline{isobar}, statt \\
+\hspace*{0.5cm}isochor}\\
+\hspace*{2cm} $\rightarrow$ Reaktionen und Prozesse in offenen Systemen oder bei konstanter\\
+\hspace*{2.6cm} Pumpleistung bzw. Druckregelung\\
+$\rightarrow$\textit{\textbf{Folge:}}\\
+\hspace*{0.5cm}Neben dem Wärmeaustausch wird gleichzeitig auch Volumenarbeit verrichtet
+\begin{flalign}
+	\diff U 				&= \diff W + \diff Q\\
+	\diff W= \diff W_{vol} 	&=-p*\diff V\\
+	\Delta W_{vol}			&= -p*\Delta V \\
+							&=-p*(V_2-V_1)
+\end{flalign}
+\textit{Umstellen nach} $\diff Q$ \textit{bzw.} $\Delta Q$
+\begin{flalign}
+	\Delta Q_{12} 	&= \Delta U_{12} - (-p*\Delta V_{12})\\
+					&= U_2-U_1-[-p*(V_2-V_1)]\\
+					&= (U_2-p*V_2)-(U_1-p*V_1)\\
+					& \hspace{1.5cm} H_2 \hspace{2cm} H_1
+\end{flalign}
+\textit{für} $p =const.$
+\begin{flalign}
+ \Delta Q &= H_2-H_1 = \Delta H_{12}
+\end{flalign}
+
+\subsection{Die Enthalpie $\boldsymbol{H}$ eines Systems}
