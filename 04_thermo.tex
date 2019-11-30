@@ -659,3 +659,300 @@ $\rightarrow$\textit{\textbf{Folge:}}\\
 \end{flalign}
 
 \subsection{Die Enthalpie $\boldsymbol{H}$ eines Systems}
+\begin{flalign}
+	H &= U + p*V\\
+	\diff H &= \diff U + p*\diff V + V*\diff p
+\end{flalign}
+$\rightarrow \diff U = \diff W + \diff Q$ \textit{mit} $\diff W =\diff W_{vol}$\\
+$\rightarrow \diff U = -p*\diff V+\diff Q$
+\begin{flalign}
+	\diff H &= -p*\diff V+\diff Q +p*\diff V + V*\diff p\\
+			&= V*\diff p+\diff Q
+\end{flalign}
+$\rightarrow$ \textit{Kombination mit dem idealen Gasgesetz }$p*V=n*R*T$
+\begin{flalign}
+	H	&= U+n*R*T\\
+\end{flalign}
+$\rightarrow$ \textit{spezifische Enthalpie}
+\begin{flalign}
+	H_{sp}	&= h_{sp} = \frac{H}{m}\\[1mm]
+	H_m		&= h_m =\frac{H}{n}
+\end{flalign}
+\subsubsection{Zusammenfassung}
+\begin{itemize}
+	\item die Enthalpie H ist eine zusammengesetzte Größe aus innerer Energie und einer Volumen(-verschiebe)arbeit
+	\item Enthalpie ist eine Zustandsgröße
+	\item $H$ trägt die Einheit einer Energie $\left[\si{\joule}\right]$
+	\item die Enthalpie wird primär zur Beschreibung thermodyn. Prozesse und chem. Reaktionen in der Chemie genutzt
+\end{itemize}
+$\boldsymbol{\rightarrow}$ {\large\textbf{ Es gilt:}} \hspace{10mm}$\boldsymbol{U<H}$\\
+Berücksichtigung der Volumenarbeit bei chem-phys. Prozessen und chem. Reaktionen
+\newpage
+\subsection{Die Enthalpie phys. Prozesse und chem. Reaktionen}
+\begin{itemize}
+	\item grundsätzlich ist die Enthalpie von den Zustandsgrößen $p,V,T$ und $n$ abhängig
+	\begin{flalign}
+		H	&= f(n,p,T,V,...)
+	\end{flalign}
+	\item Erfassung als Funktionsgleichung über das totale Differential
+	\begin{flalign}
+		\diff H &= \left(\frac{\partial H}{\partial p}\right)_{n,T}*\diff p+\left(\frac{\partial H}{\partial T}\right)_{n,p}*\diff T+\left(\frac{\partial H}{\partial n}\right)_{p,T}*\diff n
+	\end{flalign}
+	$\rightarrow$\textit{für $n=const.$}
+		\begin{flalign}
+	\diff H &= \hspace{0.7cm}\left(\frac{\partial H}{\partial p}\right)_{n,T}*\diff p+\hspace{1cm}\left(\frac{\partial H}{\partial T}\right)_{n,p}*\diff T
+	\end{flalign}
+	\hspace{4cm} Isothermer \hspace{3cm}Wärmekapazität $c_p$\\
+	\hspace*{3cm}\textsc{Joule-Thomson}-Koeffizient\hspace{1.5cm}bei $p=const.$\\
+	\hspace*{5cm}$\mu_T$\\
+	$\rightarrow \mu_T=-c_p*\mu$ \\ \\
+	$\boldsymbol{\mu}$ = isenthalpischer \textsc{Joule-Thomson}-Koeffizient der dem Verhältnis zwischen Temperatur- und Druckänderung bei der Expansion \linebreak eines Gases unter $H=const.$ entspricht
+	\item In einem geschlossenen System ist jede infinitesimale Änderung der \linebreak
+	Enthalpie $H$ den jeweiligen Änderungen von Druck und Temperatur proportional ($n=const.$)\\ \\
+	Die Proportionalitätsfaktoren sind dabei die partiellen Ableitungen nach $T$ bzw. $p$ und entsprechen der Wärmekapazität $c_p$ bei $p=const.$ und dem isothermen \textsc{Joule-Thomson}-Koeffizient $\mu_T$
+\end{itemize}
+\newpage
+\subsubsection{Wärmekapazität bei $\boldsymbol{p=const.}$}
+\begin{itemize}
+	\item die Wärmekapazität $c_p$ bei $p=const.$ gibt an, wie stark sich die Enthalpie eines Systems mit der Temperatur bei konstantem Druck ändert.\linebreak
+	Da für isobare Prozesse gilt: $\frac{V}{T}=const.$ ist dieser Prozess mit einer Volumenzu- oder -abnahme verbunden.
+	\item $c_p$ kann als molare bzw. auch spezifische Größe oder als absolute Größe $c_p$ angeben werden.
+	\begin{flalign}
+		c_p	&= \frac{C_p}{n}
+	\end{flalign}
+	\underline{Bsp.:} molare Wärmekapazitäten $c_p$
+	\begin{itemize}
+		\item \ce{Ar}: $\SI{20.76}{\joule \per \kelvin \per\mole}$
+		\item \ce{H2O}: $\SI{75.79}{\joule \per \kelvin \per\mole}$
+		\item \ce{H2O} $(liquid, 298K)$: $\SI{4.18}{\kilo\joule \per \kelvin \per\kg}$
+	\end{itemize}
+	\item \underline{vollständige differentielle Abhängigkeit von $H$:}\\ \\
+	$\rightarrow$\textit{für $n=const.$ und $p=const.$}
+	\begin{flalign}
+		\diff H &= \left(\frac{\partial H}{\partial T}\right)_{p,n}*\diff T=c_p*\diff T\\[1mm]
+		H		&= U+p*V\\
+		\diff H &= V*\diff p+\diff Q
+	\end{flalign}
+	$\rightarrow$\textit{für $n=const.$ und $p=const.$ gilt: $\diff H=\diff Q$}
+	\begin{flalign}
+		\diff Q &= c_p*\diff T
+	\end{flalign}
+	\item \underline{Abhängigkeiten von $c_p$:}
+	\begin{itemize}
+		\item $c_p$ ist temperaturabhängig:
+			\begin{itemize}
+				\item $c_p \rightarrow 0$ für $T \rightarrow \SI{0}{\kelvin}$
+				\item $c_p \rightarrow \infty$ für Phasenwechsel
+			\end{itemize}
+		\item $c_p$ ist umso größer, je mehr "`Energie"' das Vielteilchensystem aufnehmen kann.\\
+		Dies ist unter anderem abhängig von der ANzahl an besetzbaren energetischen Zuständen auf Ehrenbruderbasis von Translation, Rotation und Vibration\\
+		$\rightarrow c_p$ = stoffspezifisch und abhängig von der Phase bzw. Erscheinungsform des Stoffes $(s,l,g)$ 
+	\end{itemize}
+	$\Rightarrow$ \underline{Besonderheiten:}
+	\begin{itemize}
+		\item $c_p>c_v$, da zusätzlich Arbeit zur isobaren Volumenvergrößerung aufgebracht werden muss
+		\item $c_p$ und $c_v$ stehen in einem Zusammenhang zum Adiabatenkoeffizient $\kappa$ bzw. $\beta$
+	\end{itemize}
+	\newpage
+	\item \underline{Die Temperaturabhängigkeit von $c_p$}\\ \\
+	$\rightarrow$\textit{für $n,p =const.$}
+	\begin{flalign}
+		\diff H 	&= \left(\frac{\partial H}{\partial T}\right)_{n,p}*\diff T\\
+		\diff H		&= c_p*\diff T
+	\end{flalign}
+	\begin{itemize}
+		\item \textbf{Fall 1:}\\
+		$c_p$ soll $\neq f(T)$ sein, möglich bei kleinen $\Delta T$
+		\begin{flalign}
+			\Delta H 	&= \int_{T_1}^{T_2}c_p*\diff T\\
+						&= c_p*\int_{T_1}^{T_2}*\diff T\\
+						&= c_p*(T_2-T_1)
+		\end{flalign}
+		\item \textbf{Fall 2:}
+		\begin{itemize}
+			\item \textit{\underline{Ansatz A:}}\\
+			Bildung von mittleren $c_p$-Werten durch MW-Bildung von $c_p(T_2)$ und $c_p(T_1)$
+			\item \textit{\underline{Ansatz B:}}\\
+			Einsatz von empirischen Näherungsfaktoren für $c_p$ zur Beschreibung der T-Abhängigkeit, wobei für den Polynomansatz die Parameter $a,b,c$ für bekannte Stoffsysteme tabelliert sind.
+			\begin{flalign}
+				c_p	&= a+b*T+c*T^2\\
+				\Delta H 	&= \int_{T_1}^{T_2}(a+b*T+c*T^2)*\diff T\\
+							&= a*(T_2-T_1)+\frac{1}{2}*b*(T^2_2-T^2_1)+\frac{1}{3}*c*(T^2_2-T^2_1)
+			\end{flalign}
+		\end{itemize}
+		
+	\end{itemize}
+
+\end{itemize}
+
+\newpage
+
+\subsection{Die Wärmekapazitäten $\boldsymbol{c_p}$ und $\boldsymbol{c_v}$}
+\subsubsection{Die kalorischen Zustandsgleichungen}
+\begin{itemize}
+	\item \textbf{Innere Energie $\boldsymbol{U}$}
+	\begin{flalign}
+		U		&= f(T,V,n)
+	\end{flalign}
+	$\rightarrow$ \textit{für }$n=const.$
+	\begin{flalign}
+		\diff U 	&= \left(\frac{\partial U}{\partial T}\right)_{n,V}*\diff T+\hspace{3mm}\left(\frac{\partial U}{\partial V}\right)_{n,T}*\diff V
+	\end{flalign}
+	\hspace*{7.5cm}Mit Volumenarbeit für \\
+	\hspace*{7.5cm}gasförmige Systeme \\
+	\begin{flalign}
+		\diff U &= c_v*\diff T + \hspace{3mm}\left(\frac{\partial U}{\partial V}\right)_{n,T}*\diff V
+	\end{flalign}
+	\hspace*{7.5cm}$=0$ für \\
+	\hspace*{7.5cm}ideale Gase \\
+	\begin{flalign}
+		\diff U 	&=	\diff W + \diff Q\\
+					&= -p*\diff V + \diff Q\\
+		\diff U		&= \diff Q \\
+					&= c_v*\diff T
+	\end{flalign}
+	\item \textbf{Enthalpie $\boldsymbol{H}$}
+	\begin{flalign}
+	H		&= f(T,p,n)
+	\end{flalign}
+	$\rightarrow$ \textit{für }$n=const.$
+	\begin{flalign}
+	\diff H 	&= \left(\frac{\partial H}{\partial T}\right)_{n,p}*\diff T+\hspace{3mm}\left(\frac{\partial H}{\partial p}\right)_{n,T}*\diff p
+	\end{flalign}
+	\begin{flalign}
+	\diff H &= c_p*\diff T + \hspace{3mm}\left(\frac{\partial U}{\partial p}\right)_{n,T}*\diff p
+	\end{flalign}
+	\hspace*{7.5cm}$=0$ für \\
+	\hspace*{7.5cm}ideale Gase \\
+	\begin{flalign}
+		\diff H 	&= V*\diff p+\diff Q\\
+		\diff H 	&= \diff Q\\
+					&= c_p*\diff T
+	\end{flalign}
+\end{itemize}
+
+Je nach System sind die Größen Arbeit und Wärme der Änderung von $U$ und $H$ bzw. den resultierenden Wärmekapazitäten und Wärmemengen $Q$ gleichzusetzen.
+
+\newpage
+
+\subsubsection{Zusammenhang $\boldsymbol{c_v, c_p}$ und $\boldsymbol{R}$}
+\begin{flalign}
+	H	&= U+p*V 	&&\\
+	H-U	&= p*V 		&& \vert \quad p*V=n*R*T \text{ differenzieren nach } p\\
+	\left(\frac{\partial H}{\partial T}\right)_{n,p}*\diff T-\left(\frac{\partial U}{\partial T}\right)_{n,V}*\diff T &= n*R*\diff T && \vert \quad :\diff T\\
+	c_p-c_v	&=R&&\\
+	C_p-C_v	&= n*R
+\end{flalign}
+Die Differenz zwischen $c_p$ und $c_v$ entspricht genau der Arbeit, die aufgebracht werden muss, um das Volumen des Systems bei Erwärmung unter $p=const.$ zu vergrößern.\linebreak
+Diese Arbeit besteht aus 2 Teilen:\\
+\hspace*{6.4cm} a) Zurückdrängen der Atmosphäre\\
+\hspace*{6.4cm} b) Überwindung von zwischenmolekularen WW
+
+\subsubsection{Zusammenhang $\boldsymbol{c_v, c_p}$ und dem Adiabatenkoeffizient $\boldsymbol{\kappa}$ bzw. $\boldsymbol{\beta}$}
+
+\underline{Gegeben:}
+\begin{itemize}
+	\item Adiabatische Zustandsänderung $\diff Q = 0$
+	\item $n=const.$
+	\item ideales Gasverhalten
+\end{itemize}
+
+\begin{flalign}
+	\diff U 	&= \diff W + \cancel{\diff Q}\\
+				&= \diff W
+\end{flalign}
+$\rightarrow \diff W_{vol}=-p*\diff V$\\
+$\rightarrow \diff U=c_v*\diff T$
+\begin{flalign}
+	-p*\diff V &= c_v*\diff T
+\end{flalign}
+$\rightarrow p*V=n*R*T$\\
+$\rightarrow -p=-\frac{n*R*T}{V}$
+\begin{flalign}
+	&&&&\Delta U_{12} 	&= c_v*\frac{1}{T}*\diff T 				&&= -n*R*\frac{1}{V}*\diff V\\
+	&&&&\Delta U_{12}	&= c_v*\int_{1}^{2}\frac{1}{T}*\diff T	&&= -n*R*\int_{1}^{2}\frac{1}{V}*\diff V\\
+	&&&&\Delta U_{12}	&= c_v*\ln\left(\frac{T_2}{T_1}\right)	&&= -n*R*\ln\left(\frac{V_2}{V_1}\right)
+\end{flalign}
+$\rightarrow$ \textit{Umformen und Einführung des Exponenten }$m=\frac{c_v}{n*R}$
+\begin{flalign}
+	\ln\left(\frac{T_2}{T_1}\right)^{m}	&= -\ln\left(\frac{V_2}{V_1}\right)\\
+	\ln\left(\frac{T_2}{T_1}\right)^{m}	&= \ln\left(\frac{V_1}{V_2}\right)\\
+	\frac{T^m_2}{T^m_1}	&= \frac{V_1}{V_2}\\
+	\frac{T_2}{T_1}	&= \sqrt[m]{\frac{V_1}{V_2}}=\left(\frac{V_1}{V_2}\right)^{\frac{1}{m}}\\
+\end{flalign}
+$\rightarrow$ \textit{mit }$p*V=n*R*T$
+\begin{flalign}
+	\frac{V_2*p_2}{T_2}	&= \frac{V_1*p_1}{T_1}\\
+	\frac{V_1*p_1}{V_2*p_2}	&= \frac{T_1}{T_2} = \left(\frac{V_1}{V_2}\right)^{\frac{1}{m}}
+\end{flalign}
+$\rightarrow$ \textit{Einführung neuer Koeffizient }$\kappa = \beta = \frac{n*R}{c_v}+1$
+\begin{flalign}
+	p_1*V_1^{\kappa} = 	p_2*V_2^{\kappa}
+\end{flalign}
+$\rightarrow$ \textit{Ferner gilt: }$\kappa = \beta = \frac{c_p}{c_v}=\frac{R+c_{v,m}}{c_{v,m}}$
+\begin{flalign}
+	H_2-H_1	&= \kappa*(U_2-U_1)
+\end{flalign}
+\textit{Der Adiabatenkoeffizient $\kappa$ ist stoffspezifisch}
+
+\begin{itemize}
+	\item Adiabatenkoeffizient 1-atomiges Gas: $\kappa \approx 1,67$
+	\item Adiabatenkoeffizient 2-atomiges Gas: $\kappa \approx 1,28$
+	\item Adiabatenkoeffizient Festkörper: $\kappa \approx 1,33$
+\end{itemize}
+
+\newpage
+
+\subsection{Standardbildungsenthalpie $\boldsymbol{H^\circ_f}$}
+\begin{itemize}
+	\item $H^\circ$ \textit{Standard Enthalpie} = \\
+	die Änderung der Enthalpie eines Prozesses, dessen Ausgangsstoffe und Endprodukte im Standardzustand sind
+	\item \textit{Standardzustand} =\\
+	\SI{298,15}{\kelvin} (kann auch anders sein !) und \SI{1}{\bar}
+	\item \underline{Beispiel: Bildung von \ce{NaCl} mit \ce{Na (s) + \frac{1}{2} Cl2 (g) -> NaCl (s)} }\\
+	\begin{enumerate}
+		\item Sublimation von \ce{Na (s)} \\
+		\ce{Na (s) -> Na (g)} \hspace*{25mm} $\Delta H_{sub} 	= \SI{107.3}{\kilo \joule \per \mol}$
+		\item Ionisation von \ce{Na (g)} \\
+		\ce{Na (g) -> Na+ (g) + e- (g)} \hspace*{10mm} $\Delta E_{ion} 	= \SI{498}{\kilo \joule \per \mol}$
+		\item Dissoziation von \ce{Cl2} \\
+		\ce{Cl2 (g) -> 2 Cl (g)} \hspace*{25mm} $\Delta H_{Diss} 	= \SI{121.7}{\kilo \joule \per \mol}$
+		\item Elektronenaufnahme \ce{Cl (g)} \\
+		\ce{Cl (g) + e- -> Cl- (g)} \hspace*{20mm} $\Delta H_{e-aff} 	= \SI{-351.2}{\kilo \joule \per \mol}$
+		\item Gitteraufbau zu \ce{NaCl} \\
+		\ce{Na+ (g) + Cl- (g) -> NaCl (s)} \hspace*{7mm} $\Delta H_{Gitter} 	= \SI{-787.2}{\kilo \joule \per \mol}$
+	\end{enumerate}
+	
+	\noindent\rule{12cm}{0.4pt}
+	
+	\hspace*{7mm}  \ce{Na (s) + \frac{1}{2} Cl2 (g) -> NaCl (s)} \hspace*{7mm} $\Delta H_{R} 	= \SI{-411.1}{\kilo \joule \per \mol}$
+	\vspace*{-3mm}\\
+	\noindent\rule{12cm}{0.4pt}\\
+	\vspace*{-8mm}\\
+	\noindent\rule{12cm}{0.4pt}\\
+	
+	ABBILDUNG
+\end{itemize}
+
+\subsection{Standardreaktionsenthalpie $\boldsymbol{H^\circ_R}$ (Satz von \textsc{Hess})}
+= Enthalpie zur Umwandlung von Ausgangsstoffen im Standardzustand (\SI{1}{bar}) in Produkte (\SI{1}{bar}) zu einer betrachteten Temperatur $x$
+\begin{itemize}
+	\item $\Delta_RH^\circ<0$ exotherme Reaktion
+	\item $\Delta_RH^\circ>0$ endotherme Reaktion
+	\item $\Delta_RH^\circ>0 = \sum_{i=1} \nu_i*H_m^\circ(i)$\\
+	Berechnet sich aus der Differenz der Standardbildungsenthalpien der Produkte und deren der Edukte
+\end{itemize}
+\underline{Beispiel:} $4*A+B \ce{->} 2*C+D$
+\begin{flalign}
+	\Delta_RH^\circ &= \left[2*H_B(C)+H_B(D)\right]-\left[4*H_B(A)+H_B(B)\right]\\
+					&= \sum \nu_i*H_m^\circ(i)-\sum \nu_j*H_m^\circ(j)
+\end{flalign}
+\hspace*{4.5cm} Produkte \hspace*{1cm} Edukte
+\begin{itemize}
+	\item Produkte: positive Stöchiometriekoeffizienten
+	\item Edukte: negative Stöchiometriekoeffizienten
+\end{itemize}
+
+
+
+
