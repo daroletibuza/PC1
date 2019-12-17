@@ -953,6 +953,88 @@ $\rightarrow$ \textit{Ferner gilt: }$\kappa = \beta = \frac{c_p}{c_v}=\frac{R+c_
 	\item Edukte: negative Stöchiometriekoeffizienten
 \end{itemize}
 
+\subsubsection{Beispiel:}
+
+\begin{center}
+	\ce{CO + H2O -> CO2 +H2}
+\end{center}
+
+geg: $T=\SI{800}{\kelvin}, p=const., T_0=\SI{298.15}{\kelvin},$ Tabelle mit Stoffwerten \quad ges: $\Delta_RH^{800}$
+
+\begin{flalign}
+ \Delta_Rc_p	&= \sum \nu_i*c^0_{p,i} (Produkte) -\sum \nu_j*c_{p,j} (Edukte)\\
+ 		c_p		&= a+b*T+c*T^2\\
+ 			a	&= \left[a(\ce{CO2})+a(\ce{H2})\right]-\left[a(\ce{H2O})+a(\ce{CO})\right] \\
+ 			b	&= \left[b(\ce{CO2})+b(\ce{H2})\right]-\left[b(\ce{H2O})+b(\ce{CO})\right] \\
+ 			c	&= \left[c(\ce{CO2})+c(\ce{H2})\right]-\left[c(\ce{H2O})+c(\ce{CO})\right] \\
+\end{flalign}
+
+\begin{flalign}
+\Delta_RH^0(T_1)	&=  \sum \Delta_BH^0 (Produkte)-\sum \Delta_BH^0 (Edukte)
+\end{flalign}
+
+\begin{flalign}
+\Delta_RH(T_2)	&= \Delta_RH^0(T_1)	+ \int_{T_1}^{T_2} \Delta_Rc_p \diff T\\
+				&=  \Delta_RH^0(T_1)+a*(T_2-T_1)+\frac{1}{2}b*(T_2^2-T_1^2)+\frac{1}{3}c*(T_2^3-T_1^3)
+\end{flalign}
+
+\newpage
+
+\section{zweiter Hauptsatz der Thermodynamik}
+\textbf{These A:} Energie\\
+\textbf{These B:} \\
+Die neue thermodynamische Größe Entropie $S$ und die Verteilungsmöglichkeiten und Verteilung der Energie auf energetische Zustände im System.\linebreak
+Freiwillige Vorgänge verlaufen immer so, dass aus der Umverteilung der Energie eine größere Auswahl an besetzbaren \underline{und} energetisch auch besetzten Zuständen entsteht.\linebreak
+(Allgemein wird in Analogie oft von einer größeren "`Unordnung"' gesprochen)
+
+\begin{flalign}
+	S 	&\sim \diff Q \\
+	\diff S&= \frac{\diff Q}{T}
+\end{flalign}
+
+ABBILDUNG
+
+\subsubsection{\textsc{Nernst}'scher Wärmesatz}
+Die Entropie jedes reinen festen Stoffes strebt beim Nullpunkt der Temperatur den Wert 0 zu.
+\begin{itemize}
+	\item [$\rightarrow$] $S=0$ für \SI{0}{\kelvin} und Kristall ohne Gitterfehler (idealer Kristall)
+	\item [$\rightarrow$] Konsequenz: für jede Temperatur >\SI{0}{\kelvin} muss $S>0$ sein
+\end{itemize}
+
+\subsection{Die Entropie $S$ eines Systems}
+
+ABBILDUNG \\
+
+\underline{\textbf{Mögliche Entropie-Anteile eines Systems:}}
+\begin{itemize}
+	\item $S_m$: Entropie aus Massenstrom (Stoffmenge n) 
+	\item $S_q$: Entropie aus einem Wärme- bzw. Energiestrom ($\Delta T$) 
+	\item Entropieänderung aufgrund von Druckänderung mit Wechsel der Aggregatzustände
+	\item $S_{\text{Diss}}$: Entropieerzeugung durch \underline{Dissipation}\\
+	$\rightarrow$ steht allgemein für Energieumwandlungsverluste durch (unerwünschte) Nebenreaktionen mit Energieumwandlung (Stichwort: Reibung)
+\end{itemize}
+
+\begin{flalign}
+	S_{sys} 		&= S_m+S_q+S_{Diss} \\
+	\dot{S_{sys}}	&= \dot{S_m}+\dot{S_q}+\dot{S_{Diss}} =\frac{\Delta S}{\Delta t}
+\end{flalign}
+
+\newpage
+
+\begin{itemize}
+	\item Die Entropie $S$ ist eine neue thermodynamische Größe zu Beschreibung der Energieverteilungsmöglichkeiten auf energetische Zustände im System
+	\item Die Entropie eines Systems bzw. Entropieänderung bei einer Zustandsänderung kann aus mehreren Anteilen bestehen (siehe $S_m, S_q, S_{Diss}$)
+	\item Die Entropie eines Systems steigt durch Zufuhr (+ Vorzeichen) und fällt durhc (- Vorzeichen) \underline{und} kann durch Systeminterne Entropieerzeugung auch zusätzlich ansteigen
+	\item Die Entropie eines System bzw. die Entropieänderung bei einem Prozess gibt Aussage über die max. mögliche Nutzbarkeit bzw. ist eine Aussage zur "`Qualität"'bzw. "`Nutzbarkeit"' der Energie
+	\item Formal ist die Entropie bei jder Umverteilung von Energie beteiligt
+	\item Alle Prozese, die nicht 100\% reversibel sind, erzeugen Entropie. \linebreak 
+	Für Ideal reversible Prozesse ist $\diff S=0$ (abgeschlossenes System)
+	\item Die Entropie $S$ ist eine Zustandsgröße
+	\item Die Entropie $S$ ist eine energetische Größe und trägt die Einheit $\left[\si{\joule \per \kelvin}\right]$ bzw. als spez. oder molare Größe $\left[\si{\joule \per \kelvin \per \kg}\right]$ oder $\left[\si{\joule \per \kelvin \per \mol}\right]$
+\end{itemize}
+
+\subsection{Die Entropie S und der 2. HS der TD}
+
 
 
 

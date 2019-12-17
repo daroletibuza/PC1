@@ -53,3 +53,7 @@
 \contentsline {subsubsection}{\nonumberline Zusammenhang $\boldsymbol {c_v, c_p}$ und dem Adiabatenkoeffizient $\boldsymbol {\kappa }$ bzw. $\boldsymbol {\beta }$}{26}{section*.32}% 
 \contentsline {subsection}{\numberline {2.6.6}Standardbildungsenthalpie $\boldsymbol {H^\circ _f}$}{28}{subsection.2.6.6}% 
 \contentsline {subsection}{\numberline {2.6.7}Standardreaktionsenthalpie $\boldsymbol {H^\circ _R}$ (Satz von \textsc {Hess})}{28}{subsection.2.6.7}% 
+\contentsline {subsubsection}{\nonumberline Beispiel:}{29}{section*.33}% 
+\contentsline {section}{\numberline {2.7}zweiter Hauptsatz der Thermodynamik}{30}{section.2.7}% 
+\contentsline {subsubsection}{\nonumberline \textsc {Nernst}'scher Wärmesatz}{30}{section*.34}% 
+\contentsline {subsection}{\numberline {2.7.1}Die Entropie $S$ eines Systems}{30}{subsection.2.7.1}% 
