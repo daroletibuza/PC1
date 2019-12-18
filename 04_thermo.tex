@@ -1034,7 +1034,106 @@ ABBILDUNG \\
 \end{itemize}
 
 \subsection{Die Entropie S und der 2. HS der TD}
+\underline{\textbf{2. HS:}} \quad \quad $\boldsymbol{\diff S \geq 0}$\\
+"`In einem abgeschlossenem System kann die Entropie $S$ niemals kleiner sondern nur größer werden (irreversible Vorgänge) oder konstant sein (reversibler Vorgang)."' 
 
+\begin{itemize}
+	\item \textbf{Darauf aufbauende Folgesätze:}
+		\begin{itemize}
+			\item chemische Reaktionen können enthalpiegetrieben (exo- oder endotherm) \underline{und} entropiegetrieben sein
+			\item \textit{Eingeschränkte Umwandelbarkeit von Energie:}\\
+			Die innere Energie und die Wärmeenergie eines Systems kann nur eingeschränkt in Arbeit umgewandelt werden
+			\item \textit{Kreisprozesse und Nutzarbeit:}\\
+			Alle natürlichen und techn. Prozesse sind zu einem gewissen Grad irreversibel 
+			$\rightarrow $ d.h. $S$ steigt, Nutzenergie geht "`verloren"'
+			\item \textit{Wärmeübertragung:}\\
+			"`Wärme"' kann wie von selbst von einem System niederer Temperatur auf ein System mit höherer Temperatur übergehen
+		\end{itemize}
+\end{itemize}
 
+\newpage
 
+\textbf{Berechnung über die innere Energie $\boldsymbol{c_V}$, sprich für geschlossene Systeme ($V=const.$)} 
 
+\begin{flalign}
+	\diff S	&= \frac{\diff U+p*\diff V}{T}\\
+	\Delta S&= \int_{1}^{2} \frac{m*c_V}{T} \diff T + \int_{1}^{2} \frac{m*R_{sp}}{V} \diff V
+\end{flalign}
+
+\begin{flalign}
+	\Delta S&= m*c_V*\ln\left(\frac{T_2}{T_1}\right)+m*R_{sp}*\ln\left(\frac{V_2}{V_1}\right)\\
+			&= n*c_{V,m}*\ln\left(\frac{T_2}{T_1}\right)+n*R*\ln\left(\frac{V_2}{V_1}\right)
+\end{flalign}
+
+\textbf{Berechnung über die Enthalpie $\boldsymbol{c_p}$, sprich für offene Systeme ($p=const.$)} 
+
+\begin{flalign}
+\diff S	&= \frac{\diff H-V*\diff p}{T}\\
+\Delta S&= \int_{1}^{2} \frac{m*c_p}{T} \diff T - \int_{1}^{2} \frac{m*R_{sp}}{p} \diff p
+\end{flalign}
+
+\begin{flalign}
+\Delta S&= m*c_p*\ln\left(\frac{T_2}{T_1}\right)-m*R_{sp}*\ln\left(\frac{p_2}{p_1}\right)\\
+&= n*c_{p,m}*\ln\left(\frac{T_2}{T_1}\right)-n*R*\ln\left(\frac{p_2}{p_1}\right)
+\end{flalign}
+
+\subsection{Abhängigkeiten der Entropie $S$}
+Die Entropie ist abhängig von den Zustandsgrößen $V, n,p,T,... \rightarrow$ das totale Differenzial dafür lautet:
+\begin{flalign}
+	\diff S		&= \left(\frac{\partial S}{\partial T}\right)_{p,n} *\diff T +\left(\frac{\partial S}{\partial n}\right)_{p,T} *\diff  +\left(\frac{\partial S}{\partial p}\right)_{T,n} *\diff p
+\end{flalign}
+
+ABBILDUNG\\
+
+\textit{T = Verteilung der Energie auf verschiedene Energiebesetzungen}\\
+
+Analoge Berücksichtigung der Entropieänderung bei Phasenwechsel und unterschiedlichen Temperaturen bei der Enthalpie $H$
+\begin{itemize}
+	\item Einsatz MW oder Temperaturabhängigkeitsfunktion\\
+		$S= f(T)=a+b*T+c*T^2$
+	\item Anwendung des \textsc{Kirchhoff}'schen Satz\\
+		$\Delta_RS_{T_2} = \Delta_RS_{T_0} + \int_{T_0}^{T_2} \frac{\Delta_Rc_p}{T}\diff T$
+\end{itemize}
+
+\section{Fundamentalgleichungen der Thermodynamik}
+\begin{itemize}
+	\item \textbf{Thermische Zustandsgleichung:}
+		\begin{flalign}
+			p*V	&= n*R*T\\
+			p*V	&= const.\\
+			\frac{V}{T} &= const.
+		\end{flalign}
+	\item \textbf{Kalorimetrische Zustandsgleichung:}
+	\begin{flalign}
+	\diff U	&= -p*\diff V + \diff Q\\
+	\diff H	&= V*\diff p+\diff Q
+	\end{flalign} 
+	\item \textbf{Zustandsgleichung der Entropie:}
+	\begin{flalign}
+	T*\diff S	&= \diff Q + \diff W_{Diss}
+	\end{flalign}
+	\item \textbf{Innere Energie:}
+	\begin{flalign}
+		\diff U &= \diff W_{diss}+\diff Q = -p*\diff V+T*\diff S
+	\end{flalign}
+	\item \textbf{Enthalpie:}
+	\begin{flalign}
+	\diff H &= \diff U+V*\diff p+p*\diff V\\
+			&= V*\diff P+ \diff Q \\
+			&=V*\diff p+T*\diff S
+	\end{flalign}
+	\item \textbf{Freie Energie:}\\
+		\textsc{Helmholtz} führt unter Einbeziehung der inneren Energie $U$ und \linebreak der Entropie $S$ eine neue Zustandsgröße, die freie Energie $F$, ein. \linebreak 
+		Mit Hilfe der freien Energie können Aussagen zur maximal nutzbaren Energie für Nutzarbeitsprozesse getroffen werden.
+	\begin{flalign}
+	F		&= U-T*S\\
+	\diff F	&= \diff U -T*\diff S= -p*\diff V-S*\diff T
+	\end{flalign}
+	\item \textbf{Freie Enthalpie:}\\
+	\textsc{Gibbs} leitet aus der Enthalpie $H$ und der Entropie $S$ \linebreak eine neue Zustandsgröße ab, die freie Enthalpie $G$.\linebreak
+	Mit Hilfe der freien Enthalpie $G$ können Aussagen zur Freiwilligkeit von \linebreak Prozessen qualifiziert, die maximale Nutzbarkeit, sowie das chemische \linebreak Potenzial von Stoffen (Systemen) ermittelt und ein Bezug zur \linebreak Gleichgewichtskonstanten $K$ hergestellt werden kann.
+	\begin{flalign}
+	G	&= H-T*S\\
+	\diff G &= \diff H-T*\diff S= V*\diff p-S*\diff T
+	\end{flalign}
+\end{itemize}

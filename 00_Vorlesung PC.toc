@@ -57,3 +57,6 @@
 \contentsline {section}{\numberline {2.7}zweiter Hauptsatz der Thermodynamik}{30}{section.2.7}% 
 \contentsline {subsubsection}{\nonumberline \textsc {Nernst}'scher Wärmesatz}{30}{section*.34}% 
 \contentsline {subsection}{\numberline {2.7.1}Die Entropie $S$ eines Systems}{30}{subsection.2.7.1}% 
+\contentsline {subsection}{\numberline {2.7.2}Die Entropie S und der 2. HS der TD}{31}{subsection.2.7.2}% 
+\contentsline {subsection}{\numberline {2.7.3}Abhängigkeiten der Entropie $S$}{32}{subsection.2.7.3}% 
+\contentsline {section}{\numberline {2.8}Fundamentalgleichungen der Thermodynamik}{33}{section.2.8}% 
